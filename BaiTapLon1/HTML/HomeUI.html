@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trang Chủ Đọc Báo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="../CSS/HomeUI.css" />
+</head>
+<body>
+  <div class="header">
+      <div class="logo">
+          <img src="../Pic/news.png" alt="Logo Website">
+          <h1>Website</h1>
+      </div>
+      <div></div>
+      <div class="menu">
+          <ul>
+              <li><a href="HomeUI.html">Trang Chủ</a></li>
+              <li><a href="#abc">Thời tiết</a></li>
+          </ul>
+      </div>
+  </div>
+
+  <!-- Nội dung Trang Chủ -->
+  <div id="homeContent">
+    <div class="than">
+      <!-- Tin Nổi Bật -->
+      <div class="noibat" id="featuredNews">
+      </div>
+
+      <!-- Hot Trending -->
+      <div class="categories" id="hotTrending">
+          <a href="#"><h2>Hot Trending</h2></a>
+          <div class="category-list" id="hotTrendingList">
+          </div>
+      </div>
+
+      <!-- 2 Cột Chuyên Mục -->
+      <div class="dual-categories">
+          <!-- Cột bên trái: Mới nhất (chỉ hiển thị 3 bài) -->
+          <div class="left-column" id="leftColumn">
+              <a href="#"><h2>Mới nhất</h2></a>
+              
+          </div>
+          
+          <!-- Cột bên phải: Hiển thị các bài theo chuyên mục -->
+          <div class="right-column" id="rightColumn">
+               
+          </div>
+      </div>
+      <H2 id="abc"> Thời tiết</H2>
+      <!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/ha-noi?style=1&day=5&td=%23003870&ntd=%23FF0000&mvb=%23959DAD&mv=%23FF0000&mdk=%23dddddd&htd=true" id="widgeturl" width="50%" height="450px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>
+            Công ty Cổ phần KIB <br>
+            
+            Địa chỉ: P604, Tầng 6, Tòa nhà Golden Field, Khu đô thị mới Mỹ Đình 1, phường Cầu Diễn, quận Nam Từ Liêm, Hà Nội <br>
+            
+            Chịu trách nhiệm nội dung: Điều Thị Bích - Email: Dieubich@kib.vn - SĐT: 0903227888 
+            
+           </p>
+    </div>
+  </div>
+  <script src="..\JS\homeui.js" defer></script>
+</body>
+</html>

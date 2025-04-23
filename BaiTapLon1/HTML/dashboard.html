@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trang Quản Lý Báo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="../CSS/Dashboard.css" />
+</head>
+<body>
+    
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+      <h2>Quản Lý Báo</h2>
+      <ul>
+          <li><a href="#add-news">Thêm Báo</a></li>
+          <li><a href="#list-news">Danh Sách Báo</a></li>
+          <li><a href="../HTML/HomeUI.html">Trang chủ</a></li>
+          
+      </ul>
+  </div>
+  <!-- Main Content Area -->
+  <div class="main-content">
+      <h1>Trang Quản Lý Báo</h1>
+
+      <!-- Form Thêm / Sửa Báo -->
+      <div id="add-news">
+          <h2>Thêm Báo Mới</h2>
+          <form id="newsForm">
+              <div class="form-group">
+                  <label for="title">Tiêu đề:</label>
+                  <input type="text" id="title" name="title" placeholder="Nhập tiêu đề bài báo" required>
+              </div>
+              <div class="form-group">
+                  <label for="content">Nội dung:</label>
+                  <textarea id="content" name="content" rows="5" placeholder="Nhập nội dung" required></textarea>
+              </div>
+              <div class="form-group">
+                  <label for="category">Thể loại:</label>
+                  <select id="category" name="category">
+                      <!-- Nếu bạn muốn mặc định "Mới nhất", bạn có thể giữ như cũ.
+                           Nhưng lưu ý: "Mới nhất" ở đây chỉ là mục hiển thị bài báo mới tải lên theo publishedDate -->
+                      
+                      <option value="Pháp Luật">Pháp Luật</option>
+                      <option value="Chính trị">Chính trị</option>
+                      <option value="Giáo dục">Giáo dục</option>
+                      <option value="Đời sống">Đời sống</option>
+                      <option value="Thể thao">Thể thao</option>
+                      <option value="Nước ngoài">Nước ngoài</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                  <label for="featured">Báo Nổi Bật:</label>
+                  <select id="featured" name="featured">
+                      <option value="0">Không</option>
+                      <option value="1">Có</option>
+                  </select>
+              </div>
+              <!-- Thay trường nhập URL thành upload ảnh -->
+              <div class="form-group">
+                  <label for="imageUpload">Upload Hình Ảnh:</label>
+                  <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
+              </div>
+              <button type="submit" class="btn btn-primary">Lưu Báo</button>
+          </form>
+      </div>
+
+      <!-- Bảng Danh Sách Báo -->
+      <div id="list-news">
+          <h2>Danh Sách Báo</h2>
+          <table>
+              <thead>
+                  <tr>
+                      <th>Tiêu đề</th>
+                      <th>Thể loại</th>
+                      <th>Báo Nổi Bật</th>
+                      <th>Hành Động</th>
+                  </tr>
+              </thead>
+              <tbody id="newsList">
+                  <!-- Các bài báo sẽ được load tại đây -->
+              </tbody>
+          </table>
+      </div>
+  </div>
+  <script src="..\JS\dashboard.JS" defer></script>
+</body>
+</html>

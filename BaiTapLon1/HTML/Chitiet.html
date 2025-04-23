@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chi tiết bài báo</title>
+  <!-- CSS riêng cho Chi Tiết -->
+  <link rel="stylesheet" href="../CSS/chitiet.css" />
+</head>
+<body>
+  <!-- Header của HomeUI -->
+  <div class="header">
+      <div class="logo">
+          <img src="../Pic/news.png" alt="Logo Website">
+          <h1>Website</h1>
+      </div>
+      <div class="menu">
+          <ul>
+              <li><a href="../HTML/HomeUI.html">Trang Chủ</a></li>
+              <li><a href="../HTML/HomeUI.html">Tin theo khu vực</a></li>
+          </ul>
+      </div>
+  </div>
+  <!-- Nội dung Chi tiết bài báo -->
+  <div class="container">
+    <div class="news-detail">
+      <div class="news-image" id="newsImage"></div>
+      <h1 id="newsTitle"></h1>
+      <div class="news-content" id="newsContent"></div>
+    </div>
+    <button class="back-btn" onclick="history.back()">Quay lại</button>
+  </div>
+
+  <!-- Footer của HomeUI -->
+  <div class="footer">
+      <p>&copy; 2025 Website Đọc Báo. All rights reserved.</p>
+  </div>
+
+  <script src="..\JS\chitiet.js" defer></script>
+</body>
+</html>

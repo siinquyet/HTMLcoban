@@ -1,0 +1,67 @@
+/* Reset và cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container đăng nhập */
+  .login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 2em;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    color: #333;
+  }
+  
+  /* Nhóm các trường nhập */
+  .form-group {
+    margin-bottom: 1em;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #555;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ffff;
+    border-radius: 3px;
+  }
+  
+  /* Nút đăng nhập */
+  button[type="submit"] {
+    width: 100%;
+    padding: 0.7em;
+    background-color: #5a8872;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor: pointer;
+    
+  }
+  
+  /* Thông báo lỗi */
+  #error-message {
+    color: red;
+    text-align: center;
+    margin-top: 1em;
+  }
+  
