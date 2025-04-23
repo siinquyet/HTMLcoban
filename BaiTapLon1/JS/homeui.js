@@ -17,10 +17,10 @@ function renderFeaturedNews() {
   if (featured) {
     featuredContainer.innerHTML = `
       <div class="anhnoibat">
-          ${featured.image ? `<a href="../HTML/SSSS.html?id=${featuredIndex}"><img src="${featured.image}" alt="${featured.title}"></a>` : ''}
+          ${featured.image ? `<a href="../HTML/chitiet.html?id=${featuredIndex}"><img src="${featured.image}" alt="${featured.title}"></a>` : ''}
       </div>
       <div class="featured-content">
-          <a href="../HTML/SSSS.html?id=${featuredIndex}">
+          <a href="../HTML/chitiet.html?id=${featuredIndex}">
               <h1>${featured.title}</h1>
               <p>${featured.content.substring(0, 150)}...</p>
           </a>
@@ -41,7 +41,7 @@ function renderHotTrending() {
     const article = document.createElement('div');
     article.className = 'baiviet';
     article.innerHTML = `
-      <a href="../HTML/SSSS.html?id=${actualIndex}">
+      <a href="../HTML/chitiet.html?id=${actualIndex}">
         ${news.image ? `<img src="${news.image}" alt="${news.title}">` : ''}
         <h3>${news.title}</h3>
       </a>
@@ -60,7 +60,7 @@ function renderLeftColumn() {
     const newsItem = document.createElement('div');
     newsItem.className = 'news-item';
     newsItem.innerHTML = `
-      <a href="../HTML/SSSS.html?id=${actualIndex}">
+      <a href="../HTML/chitiet.html?id=${actualIndex}">
           ${news.image ? `<img src="${news.image}" alt="${news.title}">` : ''}
           <h3>${news.title}</h3>
           <p>${news.content.substring(0, 100)}...</p>
@@ -87,13 +87,13 @@ function renderRightColumnMultiple() {
         newsItem.className = 'news-item luat-news';
         newsItem.innerHTML = `
           <div class="news-text">
-              <a href="../HTML/SSSS.html?id=${actualIndex}">
+              <a href="../HTML/chitiet.html?id=${actualIndex}">
                   <h3>${news.title}</h3>
                   <p>${news.content.substring(0, 50)}...</p>
               </a>
           </div>
           <div class="news-image">
-              ${news.image ? `<a href="../HTML/SSSS.html?id=${actualIndex}"><img src="${news.image}" alt="${news.title}"></a>` : ''}
+              ${news.image ? `<a href="../HTML/chitiet.html?id=${actualIndex}"><img src="${news.image}" alt="${news.title}"></a>` : ''}
           </div>
         `;
         catSection.appendChild(newsItem);
