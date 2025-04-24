@@ -41,14 +41,14 @@ if (articleDetail) {
         // Lấy chỉ số thực trong mảng để tạo liên kết chính xác
         let actualIndex = newsData.findIndex(n => n === news);
         const imageHtml = news.image 
-          ? `<a href="news-detail.html?id=${actualIndex}"><img src="${news.image}" alt="${news.title}" /></a>`
+          ? `<a href="chitiet.html?id=${actualIndex}"><img src="${news.image}" alt="${news.title}" /></a>`
           : "";
         const articleDiv = document.createElement("div");
         articleDiv.className = "article";
         articleDiv.innerHTML = `
           ${imageHtml}
           <div>
-            <h2><a href="news-detail.html?id=${actualIndex}">${news.title}</a></h2>
+            <h2><a href="chitiet.html?id=${actualIndex}">${news.title}</a></h2>
             <p>${news.content.substring(0, 150)}...</p>
           </div>
         `;
